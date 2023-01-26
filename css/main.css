@@ -561,7 +561,7 @@ select {
   border: 0;
   outline: none;
   vertical-align: middle;
-  color: #444444;
+  color: #fff;
   font-family: "montserrat-regular", sans-serif;
   font-size: 1.4rem;
   line-height: 3rem;
@@ -701,7 +701,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border: none;
-  -webkit-text-fill-color: #fabc5a;
+  -webkit-text-fill-color: #610e0f;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -1154,12 +1154,12 @@ input::-moz-focus-inner {
   line-height: 1.833;
 }
 .section-intro.with-bottom-sep {
-  padding-bottom: 4.2rem;
+  padding-bottom: 3.5rem;
   position: relative;
 }
 .section-intro.with-bottom-sep::after {
   display: inline-block;
-  height: 1px;
+  height: 0;
   width: 200px;
   background-color: rgba(242, 242, 242, 0.1);
   text-align: center;
@@ -1489,9 +1489,9 @@ header .header-logo a {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
   header .header-logo a {
-    width: 51px;
-    height: 24px;
-    background-size: 51px 24px;
+    width: 165px;
+    height: 80px;
+    background-size: 150px 80px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -1783,7 +1783,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   text-align: center;
 }
 #about .about-wrap {
-  max-width: 900px;
+  max-width: 950px;
 }
 #about span {
   color: #610e0f;
@@ -1807,7 +1807,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #about .lead {
   font-family: "librebaskerville-bold", serif;
-  font-size: 4rem;
+  font-size: 2rem;
   line-height: 1.8;
   color: #51484d;
   margin-top: 6rem;
@@ -1864,7 +1864,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     font-size: 1.5rem;
   }
   #about .lead {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -2024,6 +2024,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #portfolio .portfolio-content {
   margin-top: -22.2rem;
+  /*margin-left: 19%;*/
+  /*margin-right: 0;*/
+  padding-left: 14%;
 }
 #portfolio .bricks-wrapper:before, 
 #portfolio .bricks-wrapper:after {
@@ -2035,13 +2038,14 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #portfolio .bricks-wrapper .brick {
   float: left;
-  width: 33.33%;
+  width: 40%;
   padding: 0;
   margin: 0;
 }
 #portfolio .bricks-wrapper .brick:nth-child(2n+1) {
   clear: both;
 }
+
 
 /* ------------------------------------------------------------------- 
  * masonry entries - (_layout.css) 
@@ -2080,21 +2084,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   z-index: 1;
 }
 .bricks-wrapper .item-wrap .overlay::after {
-  content: "...";
-  font-family: georgia, serif;
-  font-size: 3rem;
   z-index: 1;
   display: block;
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-  margin-left: -15px;
-  margin-top: -15px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  text-align: center;
-  color: #FFFFFF;
   opacity: 0;
   visibility: hidden;
   -moz-transition: all 0.3s ease-in-out;
@@ -2133,23 +2124,26 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   height: 4.6rem;
-  width: 4.6rem;
+  width: 18rem;
   line-height: 4.6rem;
   color: white;
   text-align: center;
   z-index: 2;
   border-radius: 3px;
   position: absolute;
-  top: 3.6rem;
-  right: 3rem;
+  /*padding: 70px 0;*/
+  top: 45%;
+  right: 25%;
 }
 .bricks-wrapper .item-wrap .details-link i {
   font-size: 2rem;
-  line-height: 4.2rem;
+  line-height: 4rem;
+  padding-top: 4px;
 }
 .bricks-wrapper .item-wrap .details-link:hover, .bricks-wrapper .item-wrap .details-link:focus {
-  background-color: #FFFFFF;
-  color: #000000;
+  background-color: #610e0f;
+  color: #ffffff;
+  border: 1px solid #610e0f;
 }
 .bricks-wrapper .item-wrap .item-text, .bricks-wrapper .item-wrap .details-link {
   opacity: 0;
@@ -2507,8 +2501,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 #contact {
-  background-color: #111111;
-  background-image: url(../images/contact-bg.jpg);
+  background-color: #f2f2f2;
+  /*background-image: url(../images/contact-bg.jpg);*/
+  /*background-color: white;*/
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -2523,14 +2518,14 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .75;
-  background-color: #000000;
+  opacity: .1;
+  background-color: #fff;
 }
 #contact .section-intro h1 {
-  color: white;
+  color: #51484d;
 }
 #contact .section-intro h3 {
-  color: rgba(242, 242, 242, 0.5);
+  color: #610e0f;
 }
 #contact .section-intro p.lead {
   color: rgba(242, 242, 242, 0.4);
@@ -2544,17 +2539,26 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   position: relative;
 }
 .contact-content h5 {
-  color: #FFFFFF;
-  margin-bottom: 5.4rem;
+  color: #51484d;
+  margin-bottom: 5rem;
 }
 .contact-content h6 {
-  color: #555555;
+  color: #610e0f;
   font-size: 1.4rem;
+  line-height: 1.6;
 }
 
 /* contact info */
+.contact-info {
+  margin-left: 3rem;
+}
+
 .contact-info .cinfo {
-  margin-bottom: 4.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.contact-info .cinfo p{
+  color: black;
 }
 
 /* contact form */
@@ -2583,8 +2587,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   letter-spacing: .05rem;
   padding: .6rem 2rem .6rem 2rem;
   margin: 0;
-  color: #000000;
-  background: #f9a828;
+  color: #ffffff;
+  background: #610e0f;
   border-radius: 3px;
 }
 #contact form .form-field label::after {
@@ -2594,41 +2598,28 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-top: -6px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid #f9a828;
+  border-bottom: 5px solid #610e0f;
   content: "";
 }
-#contact form ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-}
-#contact form :-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  /* Firefox 18- */
-}
-#contact form ::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  /* Firefox 19+ */
-}
-#contact form :-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-}
-#contact form .placeholder {
-  color: rgba(255, 255, 255, 0.3) !important;
-}
+
 
 #contact input[type="text"],
 #contact input[type="password"],
 #contact input[type="email"],
 #contact textarea {
+  /*rgb(97, 14, 15)*/
   width: 100%;
-  color: rgba(255, 255, 255, 0.6);
+  /*color: rgba(97, 14, 15, 0.9);*/
   margin-bottom: 3.6rem;
-  background: rgba(255, 255, 255, 0.1);
+  /*background: #fff;*/
+  background: transparent !important;
+  border: 1px solid #610e0f;
 }
 
 #contact input[type="text"]:focus,
 #contact input[type="password"]:focus,
 #contact input[type="email"]:focus {
-  color: #FFFFFF;
+  color: #51484d;
 }
 
 #contact textarea {
@@ -2636,7 +2627,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 1.8rem 2rem;
 }
 #contact textarea:focus {
-  color: #FFFFFF;
+  color: #51484d;
 }
 
 #contact button.submitform {
@@ -2647,12 +2638,14 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   line-height: 6rem;
   padding: 0 3rem;
   width: 100%;
-  background: #f9a828;
-  color: #000000;
+  background: #610e0f;
+  color: #ffffff;
   margin-top: .6rem;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-  background: #f89e0f;
+  background: #ffffff;
+  border: 2px solid #610e0f;
+  color: #000000
 }
 
 #message-warning, #message-success {
@@ -2717,7 +2710,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 .s-loader > div {
   width: 9px;
   height: 9px;
-  background-color: #FFFFFF;
+  background-color: #610e0f;
   border-radius: 100%;
   display: inline-block;
   margin-right: .9rem;
@@ -2837,6 +2830,14 @@ footer h4.h05::after {
 .footer-main {
   padding-top: 9.6rem;
   padding-bottom: 3rem;
+  background-color: #610e0f;
+}
+.footer-main .footer-logo {
+  margin-bottom: 2rem;
+  margin-top: -4rem;
+}
+.footer-main .footer-about p,h4 {
+  color: rgba(255, 255, 255, 0.8);
 }
 .footer-main ul {
   font-size: 1.5rem;
@@ -2847,7 +2848,7 @@ footer h4.h05::after {
   padding-left: 0;
 }
 .footer-main ul a, .footer-main ul a:visited {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.8);
 }
 .footer-main ul a:hover, .footer-main ul a:focus {
   color: #FFFFFF;
@@ -2864,10 +2865,10 @@ footer h4.h05::after {
   padding: 1.5rem 8rem 1.5rem 2rem;
   margin-bottom: 1.5rem;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .footer-main #mc-form button {
-  background-color: #f9a828;
+  background-color: white;
   color: #000000;
   width: 6rem;
   height: 6rem;
@@ -2879,7 +2880,8 @@ footer h4.h05::after {
   top: 0;
 }
 .footer-main #mc-form button:hover {
-  background-color: #f89e0f;
+  background-color: #610e0f;
+  color: #ffffff;
 }
 .footer-main #mc-form button i {
   font-size: 2.6rem;
@@ -2896,10 +2898,11 @@ footer h4.h05::after {
 /* footer bottom
  * --------------------------------- */
 .footer-bottom {
-  margin-top: 3rem;
+  /*margin-top: 3rem;*/
   text-align: center;
   font-family: "montserrat-regular", sans-serif;
   font-size: 1.4rem;
+  background-color: #610e0f;
 }
 .footer-bottom .copyright span {
   display: inline-block;
