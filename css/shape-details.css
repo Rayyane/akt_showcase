@@ -1,0 +1,97 @@
+header {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 700;
+}
+header .row {
+  height: auto;
+  max-width: 1300px;
+  position: relative;
+}
+
+#header-menu-trigger {
+  background-color: #000000;
+}
+
+#header-menu-trigger .header-menu-text {
+  background-color: #000000;
+}
+
+/* ------------------------------------------------------------------- 
+ * header logo - (_layout.css) 
+ * ------------------------------------------------------------------- */
+header .header-logo {
+  position: absolute;
+  left: 32px;
+  top: 22px;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+header .header-logo a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  width: 190px;
+  height: 100px;
+  background: url("../images/at_logo.png") no-repeat center;
+  background-size: 190px 100px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * header section 
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+  header .header-logo a {
+    width: 165px;
+    height: 80px;
+    background-size: 150px 80px;
+  }
+}
+
+#about .intro img {
+  margin-top: 6rem;
+}
+
+#about .intro h1 {
+  text-transform: uppercase;
+}
+
+#about .unique-text-ac163 {
+  text-align: left;
+}
+
+#about .unique-text-ah185 {
+  text-align: left;
+}
+
+@media (min-width: 1199px) {
+  #about .unique-text-ac163 {
+    margin-top: 15%;
+  }
+}
+
+@media (min-width: 1199px) {
+  #about .unique-text-ah185 {
+    margin-top: 10%;
+  }
+}
+
+#about .unique-shapes{
+  margin-top: 7rem;
+}
