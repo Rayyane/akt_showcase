@@ -103,7 +103,9 @@ header .header-logo a {
   position: relative;
   padding-top: 15.2rem;
   padding-bottom: 5rem;
-  margin-right: -12%;
+  
+  width: 50%;
+  text-align: right;
 }
 
 #about .intro img {
