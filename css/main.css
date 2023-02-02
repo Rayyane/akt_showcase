@@ -2041,6 +2041,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   /*margin-right: 0;*/
   padding-left: 14%;
 }
+@media only screen and (max-width: 500px) {
+  #portfolio .portfolio-content {
+    margin-top: -22.2rem;
+    padding-left: 7%;
+  }
+}
 #portfolio .bricks-wrapper:before, 
 #portfolio .bricks-wrapper:after {
   content: "";
