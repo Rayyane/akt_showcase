@@ -104,3 +104,8 @@ header .header-logo a {
 #about .unique-shapes{
   margin-top: 7rem;
 }
+
+#about .unique-shapes .row .col-md-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
