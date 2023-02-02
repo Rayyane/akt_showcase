@@ -84,6 +84,28 @@ header .header-logo a {
   color: white;
 }*/
 
+#section-one-design {
+  width: 100%;
+  /*min-height: 620px;*/
+  height: 100%;
+  background-color: #151515;
+  background-image: url(../images/FRD00045.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#section-one-design .home-content-tablecell .row {
+  position: relative;
+  padding-top: 8.2rem;
+  padding-bottom: 12rem;
+  /*margin-left: -20%;*/
+}
+
 #about .intro img {
   margin-top: 6rem;
 }
