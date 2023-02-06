@@ -1,9 +1,4 @@
 /* =================================================================== 
- *
- *  Infinity v1.0 Main Stylesheet
- *  01-02-2017
- *  ------------------------------------------------------------------
- *
  *  TOC:
  *  01. webfonts and iconfonts
  *  02. base style overrides
@@ -929,10 +924,10 @@ input::-moz-focus-inner {
  * markup:
  *
  * <aside class="pull-quote">
- *		<blockquote>
- *			<p></p>
- *		</blockquote>
- *	</aside>
+ *    <blockquote>
+ *      <p></p>
+ *    </blockquote>
+ *  </aside>
  *
  * --------------------------------------------------------------------- */
 .pull-quote {
@@ -969,8 +964,8 @@ input::-moz-focus-inner {
  * markup:
  *
  * <ul class="stats-tabs">
- *		<li><a href="#">[value]<em>[name]</em></a></li>
- *	</ul>
+ *    <li><a href="#">[value]<em>[name]</em></a></li>
+ *  </ul>
  *
  * Extend this object into your markup.
  *
@@ -2611,12 +2606,12 @@ footer h4.h05::after {
   background-color: #610e0f;
 }
 .footer-main .footer-logo {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   margin-top: -4rem;
 }
 .footer-main .footer-about p,h4 {
   color: rgba(255, 255, 255, 0.8);
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 15px;
 }
 .footer-main ul {
